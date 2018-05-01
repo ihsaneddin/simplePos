@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Simple POS</title>
+	<title>{{ env("APP_NAME", "Simple-POS") }}</title>
 
 	<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 	<script src="//code.jquery.com/jquery-2.2.0.min.js" crossorigin="anonymous"></script>
@@ -39,7 +39,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ url('/') }}">Simple-POS</a>
+				<a class="navbar-brand" href="{{ url('/') }}">{{ env("APP_NAME", "Simple-POS") }}</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
