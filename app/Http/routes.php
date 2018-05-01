@@ -43,7 +43,9 @@ Route::group(['middleware' => 'language'], function()
     Route::resource('sales', 'SaleController');
 
     Route::resource('reports', 'ReportController');
+    Route::resource('item_sale_reports', 'ItemSaleReportController');
     Route::post("reports/export", 'ReportController@export');
+    Route::post("item_sale_reports/export", "ItemSaleReportController@export");
 
 
     Route::group(['prefix' => 'api/v1'], function () {
